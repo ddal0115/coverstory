@@ -1,0 +1,90 @@
+body {
+  margin:0;
+  background-image: url(background.png);
+  cursor: default;
+}
+div.whole_line {
+  margin: 50px;
+  font-family: "Noto Serif KR Black";
+  line-height: 1.8;
+  font-size: 36px;
+}
+span.first_line {
+  color: #b57b15;
+}
+span.last_line {
+  color: #ef9d18;
+}
+#effect_1_thing {
+  display: inline-block;
+  transition: height 0.5s;
+  transition-timing-function: ease-in-out;
+  top: 100px;
+  left: 278px;
+  width: 184px;
+  height: 0px;
+  background-color: transparent;
+
+}
+#effect_1_thing:hover {
+  display: inline-block;
+  background-color: #b57b15;
+  height: 64px;
+  color: #535353;
+}
+.effect_2_thing:hover {
+  text-decoration: underline;
+}
+.effect_3_thing {
+  background-color: #b57b15;
+}
+.effect_4_thing:hover {
+  display: inline-block;
+  animation: shake 0.8s cubic-bezier(.36,.07,.19,.97) infinite alternate;
+  transform: translate3d(0,0,0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(1px, 1px, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-2px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(2px, 1px, 0);
+  }
+}
+.effect_5_thing:hover {
+  text-decoration: line-through;
+}
+.effect_6_thing {
+  opacity: 0.3;
+}
+.effect_7_thing:hover {
+  transition: all 0.5s;
+  transition-timing-function: ease;
+  color: #B6371C;
+}
+.effect_8_thing:hover {
+  font-style: italic;
+}
+
+.effect_9_thing:hover {
+  transition: all 0.5s;
+  transition-timing-function: ease;
+  border: double 0.5px ;
+  border-radius: 50%;
+  border-color: #b57b15;
+}
+.effect_10_thing:hover {
+  cursor: pointer;
+}
+::selection {
+  opacity: 1;
+  background-color: #4077db;
+}
